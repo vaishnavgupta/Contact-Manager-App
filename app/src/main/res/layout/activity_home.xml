@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@drawable/homenew"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="320dp"
+        app:startIconDrawable="@drawable/baseline_person_24"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etHomeName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Name" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:startIconDrawable="@drawable/baseline_email_24"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/etHomeMail"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        app:startIconDrawable="@drawable/baseline_contact_phone_24"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/etHomeNo"
+            android:layout_height="wrap_content"
+            android:hint="Enter Phone Number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:backgroundTint="@color/blue"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Contact" />
+</LinearLayout>
